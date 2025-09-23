@@ -8,7 +8,7 @@
 body{
   font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   background: #0b0d0f;
-  color: #e9eef2;
+  color: #ffffff;
   -webkit-font-smoothing:antialiased;
 }
 
@@ -62,7 +62,7 @@ body{
 }
 .progress-bar{
   background: linear-gradient(90deg,var(--accent), #1b6ca8);
-  color: #fff;
+  color: #000;
   font-size: 10px;
   line-height:12px;
   text-align:center;
@@ -70,7 +70,7 @@ body{
 
 /* Links */
 a{
-  color: var(--accent);
+  color: #9ecbff;
 }
 
 /* Controls */
@@ -89,4 +89,32 @@ footer{
     width: 180px;
     height: 180px;
   }
+}
+
+/* Keep muted text slightly translucent white instead of black */
+.text-muted {
+    color: rgba(255,255,255,0.65) !important;
+}
+
+/* Ensure card content inherits the white color */
+.card,
+.card .card-body,
+.bg-card {
+    color: inherit;
+}
+
+/* Form validation / helper text readable on dark bg */
+.invalid-feedback,
+.form-label,
+.small,
+.lead,
+.skill-name {
+    color: inherit;
+}
+
+/* Navbar links explicitly white */
+.navbar .nav-link,
+.navbar .navbar-brand,
+.navbar .btn {
+    color: #ffffff !important;
 }
