@@ -31,10 +31,10 @@ form.addEventListener('submit', function(e){
   const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
 
   // open user's mail client
-  window.location.href = `mailto:your.email@example.com?subject=${subject}&body=${body}`;
+  window.location.href = `mailto:malikmuhammadzeeshanpahore@gmail.com?subject=${subject}&body=${body}`;
 
   // Show success visually (in case mail client not available)
   alertBox.style.display = 'block';
   alertBox.className = 'alert alert-success';
-  alertBox.innerText = 'Your message is being composed in your mail client. If nothing opens, please email your.email@example.com directly.';
+  alertBox.innerText = 'Your message is being composed in your mail client. If nothing opens, please email malikmuhammadzeeshanpahore@gmail.com directly.';
 });
